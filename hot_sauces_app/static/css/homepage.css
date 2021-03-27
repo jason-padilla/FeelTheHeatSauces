@@ -1,0 +1,236 @@
+#banner-container {
+  background-image: url("../images/swell-banner.jpg");
+  background-size: cover;
+  color:white;
+}
+#banner-header {
+  margin-top: 6rem!important;
+  padding: 4rem 0rem 8rem 6rem!important;
+  max-width: 745px;
+}
+#featured-container {
+  max-width: 1550px;
+  max-height:330px;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+#month-sauce-container {
+  max-width: 1250px;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  height: 400px;
+  border:2px solid red;
+}
+#month-sauce {
+  max-height:400px;
+  transition: transform 0.5s;
+}
+#month-sauce:hover {
+  transform: translateY(-5px);
+}
+#popular-container {
+  max-width: 1550px;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+#popular-container .row {
+  margin-bottom: 45px;
+}
+
+/* Classes */
+.title {
+  margin: 0 auto 50px;
+  position:relative;
+  line-height:60px;
+}
+.title::after {
+  content: ' ';
+  background:red;
+  width: 100px;
+  height: 5px;
+  border-radius: 5px;
+  position: absolute;
+  bottom:0;
+  transform: translateX(-220%);
+}
+.popular-sauce {
+  /* border: 2px dotted red; */
+  max-width: 270px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 1px;
+  text-align: center;
+}
+.popular-sauce img:hover {
+  transform: translateY(-5px);
+}
+.popular-sauce img {
+  /* border: 2px dotted red; */
+  max-height:400px;
+  max-width:267px;
+  margin-right: auto;
+  margin-left: auto;
+  transition: transform 0.5s;
+}
+.popular-sauce p {
+  font-size: 14px;
+  margin-top:5px;
+  margin-bottom:5px;
+}
+.popular-sauce a, #month-sauce-container a {
+  color:black;
+}
+.visible-small {
+  display: none;
+}
+/* Media Sizes */
+@media (max-width: 1200px) {
+  p {
+    margin-bottom: .5rem;
+  }
+  #month-sauce-container h3 {
+    font-size: 1.25rem;
+  }
+  #month-sauce-container .display-4 {
+    font-size: 2.5rem;
+  }
+  #month-sauce {
+    max-height: 345px;
+  }
+  .container {
+    max-width: 820px;
+  }
+  .popular-sauce img {
+    max-width: 175px;
+  }
+  .py-5 {
+    padding-bottom: 2rem!important;
+    padding-top: 2rem!important;
+  }
+  .px-5 {
+    padding-left: 2rem!important;
+    padding-right: 2rem!important;
+  }
+}
+
+@media (max-width: 1000px) {
+  #banner-header {
+    margin-top: 0rem!important;
+    padding: 4rem 0rem 6rem 2rem!important;
+    max-width: 700px;
+  }
+}
+
+@media (max-width: 768px) {
+  #banner-header {
+    padding: 7rem 0rem 8rem 4rem!important;
+    max-width: 550px;
+  }
+  .visible-sauce {
+    display: none;
+  }
+  .popular-sauce p {
+    font-size: 12px;
+  }
+  .popular-sauce img {
+      max-width: 150px;
+  }
+}
+
+@media (max-width: 575px) {
+  #featured-container {
+    display: none;
+  }
+  #banner-header {
+    padding: 7rem 4rem 6rem 3rem!important;
+    max-width: 450px;;
+  }
+  #banner-container .display-4 {
+    font-size:2.5rem;
+  }
+  #banner-container .lead {
+    font-size: 1rem;
+  }
+  #month-sauce-container .display-4 {
+    font-size:2rem;
+  }
+  #month-sauce-container h3 {
+    font-size:1.25rem;
+  }
+  .bg-light {
+    display: none;
+  }
+  .visible-small {
+    display: none;
+  }
+  .visible-big {
+    display: inline-block;
+  }
+  .py-5 {
+    padding-top: .5rem!important;
+    padding-bottom: .5rem!important;
+  }
+  .btn {
+    padding: .25rem .5rem;
+    font-size: .875rem;
+    line-height: 1.5;
+    border-radius: .2rem;
+  }
+}
+
+@media (max-width: 450px) {
+  #banner-container {
+    align-items: center;
+    text-align: center;
+  }
+  #banner-container .display-4 {
+    font-size: 1.75rem;
+  }
+  #banner-header {
+    padding: 6rem 3rem 4rem 3rem!important;
+  }
+  #month-sauce-container .display-4 {
+    font-size:1.75rem;
+  }
+  #month-sauce-container p {
+    font-size:14px;
+  }
+  #month-sauce-container .px-5 {
+    padding-right: 1rem!important;
+    padding-left: 1rem!important;
+  }
+  .visible-small {
+    display: inline-block;
+  }
+  .visible-big {
+    display: none;
+  }
+  .popular-sauce img {
+    max-width: 130px;
+  }
+}
+
+@media (max-width: 350px) {
+  #month-sauce-container .display-4 {
+    font-size: 1.25rem;
+  }
+  #month-sauce-container h3 {
+    font-size: 1rem;
+  }
+  #month-sauce-container p {
+    font-size: 13px;
+  }
+  .my-5 {
+    margin-bottom: 2rem!important;
+    margin-top: 2rem!important;
+  }
+}

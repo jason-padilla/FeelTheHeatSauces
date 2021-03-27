@@ -1,0 +1,93 @@
+/* IDs */
+#sauces-container {
+    max-width: 1550px;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+#sauces-container .row {
+    margin-bottom: 45px;
+}
+
+/* Classes */
+.pt-5 {
+    padding-top: 6rem!important;
+}
+.heat-title {
+    text-decoration-thickness: 5px; 
+    text-decoration-color: red; 
+    text-underline-position: under
+}
+.sauce {
+    max-width: 270px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}
+.sauce img:hover {
+    transform: translateY(-5px);
+}
+.sauce img {
+    max-height:400px;
+    max-width:267px;
+    margin-right: auto;
+    margin-left: auto;
+    transition: transform 0.5s;
+}
+.sauce p {
+    font-size: 14px;
+    margin-top:5px;
+    margin-bottom:5px;
+}
+.sauce a {
+    color:black;
+}  
+.form-control {
+    max-width: 200px;
+    margin-left:20px;
+}
+.col {
+    margin-bottom: 35px;
+}
+
+/* Media Sizes */
+@media (max-width: 1200px) {
+    .sauce img {
+        max-width: 190px;
+    }
+    .form-control {
+        max-width: 160px;
+    }
+}
+
+@media (max-width: 768px) {
+    h2 {
+        font-size: 1.5rem;
+    }
+    .sauce p {
+        font-size: 12px;
+    }
+    .sauce img {
+        max-width: 150px;
+    }
+}
+
+@media (max-width: 575px) {
+    .form-control {
+        margin-left:0px;
+    }
+}
+
+@media (max-width: 450px) {
+    h2 {
+        font-size: 1.25rem;
+    }
+    .sauce img {
+        max-width: 130px;
+    }
+    .form-control {
+        font-size: .7rem;
+    }
+}

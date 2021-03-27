@@ -1,0 +1,59 @@
+h3 {
+    margin-top: 0;
+    font-weight: 500;
+    line-height: 1.2;
+    color: #373f50;
+    font-size: 1rem;
+    font-weight: bold;
+    vertical-align: top;
+}
+
+/* IDs */
+#cart-container {
+    margin: 50px auto;
+    max-width: 1450px;
+    width: 100%;
+    min-height: 65%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+#total-container {
+    border-radius: 15px;
+}
+
+/* Classes */
+.product-row {
+    margin-right: 40px;
+}
+.product-row img {
+    margin-right: 15px;
+    width:100px;
+}
+.product-title a {
+    color: #373f50;
+}
+
+/* Media Sizes */
+@media (max-width: 575px) {
+    h1 {
+        font-size: 2rem;
+    }
+    input {
+        text-align: center;
+    }
+    .sauce-info {
+        text-align: center!important;
+    }
+    .product-row {
+        margin-right: 0px;
+    }
+    .product-row img {
+        margin-right: 0px;
+        width:150px;
+    }
+    .visible-sm {
+       display: none; 
+    }
+}
